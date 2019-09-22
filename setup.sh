@@ -3,6 +3,7 @@ set -e
 
 #:let $PATH .= '~/myvim'
 
+echo "set ~/.vimrc file\n"
 if test -e ~/.vimrc
 then
 	cp ~/.vimrc ./.vimrc.myvimback
@@ -10,6 +11,7 @@ then
 fi
 cp ./.vimrc ~/.vimrc
 
+echo "set vundle.vim..."
 # https://stackoverflow.com/questions/15316601/in-what-cases-could-git-pull-be-harmful
 git config --global alias.up '!git remote update -p; git merge --ff-only @{u}'
 repo=~/.vim/bundle/Vundle.vim
@@ -19,8 +21,10 @@ then
 else
 	git clone https://github.com/VundleVim/Vundle.vim.git ${repo}
 fi
-echo "Enter !"
+echo "set vundle.vim...end\n"
 
+echo "set vundle.vim plugin... press any key"
 #vim +PluginClean! +PluginInstall +PluginUpdate +qall 2>/dev/null
-$(vim +PluginInstall +PluginUpdate +qall 2>/dev/null)
-
+#$(vim +PluginInstall +PluginUpdate +qall 2>/dev/null)
+vim +PluginInstall +PluginUpdate +qall 2>/dev/null
+echo "set vundle.vim plugin...end\n"

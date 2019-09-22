@@ -9,8 +9,9 @@ let g:airline_powerline_fonts = 1
 " ctags and csope settings
 " =====================================
 "/mnt/c/Users/jin/Desktop/iamroot/linux/
-pathkernel=/mnt/c/Users/jin/Desktop/iamroot/linux
-set tags+=${pathkernel}/tags
+"let pathkernel=/mnt/c/Users/jin/Desktop/iamroot/linux
+"set tags+=${pathkernel}/tags
+set tags+=/mnt/c/Users/jin/Desktop/iamroot/linux/tags
 set ignorecase
 
 set csprg=/usr/bin/cscope " location of cscope
@@ -18,10 +19,9 @@ set csto=0 " cscope DB search first
 set cst " cscope DB tag DB search
 set nocsverb " no verbose
 
-cs add ${pathkernel}/cscope.out ${pathkernel}/
+"cs add ${pathkernel}/cscope.out ${pathkernel}/
+cs add /mnt/c/Users/jin/Desktop/iamroot/linux/cscope.out /mnt/c/Users/jin/Desktop/iamroot/linux/
 set csverb
-
-echo tags
 
 "======================================
 " easy tags setting

@@ -14,7 +14,7 @@ set smartcase
 set hlsearch
 set incsearch
 
-set lazyredraw
+"set lazyredraw
 
 set magic
 

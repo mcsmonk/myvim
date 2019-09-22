@@ -34,5 +34,5 @@ source ~/myvim/myvim.vim
 source ~/myvim/kernel.vim
 
 catch
-echo FAIL : load vim set file
+echo "FAIL : load vim set file"
 endtry

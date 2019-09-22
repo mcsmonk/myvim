@@ -31,4 +31,5 @@ set ai
 set si
 set wrap
 
+colorscheme elflord
 

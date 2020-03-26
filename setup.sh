@@ -11,6 +11,14 @@ then
 fi
 cp ./.vimrc ~/.vimrc
 
+echo "set ~/.vim/mysnippets\n"
+if test -e ~/.vim/mysnippets
+        rm -rf ~/.vim/mysnippets/*
+else
+        mkdir ~/.vim/mysnippets
+fi
+cp ./mysnippets/* ~/.vim/mysnippets/
+
 echo "set vundle.vim..."
 # https://stackoverflow.com/questions/15316601/in-what-cases-could-git-pull-be-harmful
 git config --global alias.up '!git remote update -p; git merge --ff-only @{u}'

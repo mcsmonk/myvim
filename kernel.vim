@@ -11,7 +11,7 @@ let g:airline_powerline_fonts = 1
 "/mnt/c/Users/jin/Desktop/iamroot/linux/
 "let pathkernel=/mnt/c/Users/jin/Desktop/iamroot/linux
 "set tags+=${pathkernel}/tags
-set tags+=/mnt/c/Users/jin/Desktop/iamroot/linux/tags
+set tags+=/mnt/c/Users/jin/Desktop/linux/tags
 set ignorecase
 
 set csprg=/usr/bin/cscope " location of cscope
@@ -20,7 +20,7 @@ set cst " cscope DB tag DB search
 set nocsverb " no verbose
 
 "cs add ${pathkernel}/cscope.out ${pathkernel}/
-cs add /mnt/c/Users/jin/Desktop/iamroot/linux/cscope.out /mnt/c/Users/jin/Desktop/iamroot/linux/
+cs add /mnt/c/Users/jin/Desktop/linux/cscope.out /mnt/c/Users/jin/Desktop/linux/
 set csverb
 
 "======================================

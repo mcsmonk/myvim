@@ -11,7 +11,13 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'scrooloose/nerdtree'
+
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 source ~/myvim/kernel.vimplugin
@@ -31,6 +37,7 @@ filetype plugin indent on
 try
 
 source ~/myvim/myvim.vim
+source ~/myvim/nerdtree.vim
 source ~/myvim/kernel.vim
 
 catch

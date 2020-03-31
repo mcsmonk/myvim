@@ -1,9 +1,5 @@
 
-Plugin 'scrooloose/nerdtree'
-Plugin 'airblade/vim-gitgutter'		" git의 변경 사항을 보여줌
 Plugin 'xolox/vim-easytags'		" ctags를 쉽게 사용
 Plugin 'xolox/vim-misc'			" dependency of vim-easytags
 Plugin 'ronakg/quickr-cscope.vim'	" cscope를 쉽게 사용
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 

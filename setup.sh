@@ -13,6 +13,7 @@ cp ./.vimrc ~/.vimrc
 
 echo "set ~/.vim/mysnippets\n"
 if test -e ~/.vim/mysnippets
+then
         rm -rf ~/.vim/mysnippets/*
 else
         mkdir ~/.vim/mysnippets
